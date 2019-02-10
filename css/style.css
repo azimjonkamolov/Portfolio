@@ -264,11 +264,13 @@ main {
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
+    font-size: 24px;
+    opacity: 1; }
 
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%, 0, 0); }
+    transform: translate3d(100%, 0, 0);
+    opacity: 1; }
     .menu-branding .portrait {
       background: url("../img/Es.jpg");
       width: 150px;
@@ -284,12 +286,19 @@ main {
   main {
     padding: 2rem; }
     main #home h1 {
-      margin-top: 10vh; }
+      margin-top: 10vh;
+      font-size: 4rem; }
     main h1 {
       text-align: 4rem; }
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+
+  .boxes {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .boxes#idit {
+      font-size: 1px; }
 
   .projects {
     grid-template-columns: 1fr; } }

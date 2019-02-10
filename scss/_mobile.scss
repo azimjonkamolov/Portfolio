@@ -39,11 +39,13 @@
       height: 75vh;
       transform: translate3d(-100%, 0, 0);
       font-size: 24px;
+      opacity: 1;
     }
   
     .menu-branding {
       height: 25vh;
       transform: translate3d(100%, 0, 0);
+      opacity: 1;
   
       .portrait {
         background: url('../img/Es.jpg');
@@ -74,6 +76,7 @@
       padding: 2rem;
       #home h1 {
         margin-top: 10vh;
+        font-size: 4rem;
       }
       h1
       {
@@ -84,7 +87,15 @@
         font-size: 5rem;
       }
     }
-  
+    .boxes
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        &#idit
+        {
+         font-size: 1px;;   
+        }
+    }
     .projects {
       grid-template-columns: 1fr;
     }
