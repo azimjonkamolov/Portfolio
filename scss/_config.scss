@@ -52,7 +52,7 @@ $background-opacity: 0.8;
 
 // Media Query Mixins
 @mixin mediaSm {
-    @media (min-device-height: 667px) and (min-device-width: 375px) {
+    @media screen and (max-width: 640px) {
       @content;
     }
   }
