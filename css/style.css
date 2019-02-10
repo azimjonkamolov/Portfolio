@@ -294,13 +294,11 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
 
-  .boxes {
-    padding-left: 10px;
-    padding-right: 10px; }
-    .boxes#idit {
-      font-size: 1px; }
-
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+
+  #brwo {
+    overflow-wrap: break-word;
+    word-wrap: break-word; } }
 
 /*# sourceMappingURL=style.css.map */
