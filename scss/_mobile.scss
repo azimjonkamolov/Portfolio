@@ -1,13 +1,20 @@
 // Widescreens
-@include mediaXL
+@include mediaXl
 {
+    .projects
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
 
 }
 
 // Desktop & Laptops
 @include mediaLg
 {
-    
+    .projects
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 // Tablet & Small Laptops
@@ -49,7 +56,7 @@
     {
         height: 25vh;
         transform: translate3d(100%, 0, 0);
-        opacity: 0.8;
+        opacity: 1;
 
         .portrait
         {
@@ -58,55 +65,38 @@
             height: 150px;
         }
     }
+
+    .about-info
+    {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .projects
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
+
+
 
 // Smartphones
 @include mediaSm
 {
-    main
+    main#home h1
     {
-        align-items: center;
-        text-align: center;
-
-        .lg-heading
-        {
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
+        margin-top: 10vh;
     }
-
-    ul.menu-nav,
-    div.menu-branding
+    .projects
     {
-        float: none;
-        width: 100%;
-        min-height: 0;
-
-        &.show
-        {
-            transform: translate3d(0,0,0);
-        }
+        grid-template-columns: 1fr;
     }
-    .menu-nav
-    {
-        height: 75vh;
-        transform: translate3d(-100%,0,0);
-        font-size: 24px;
-        opacity: 1;
-    }
-
-    .menu-branding
-    {
-        height: 25vh;
-        transform: translate3d(100%, 0, 0);
-        opacity: 0.8;
-
-        .portrait
-        {
-            background: url('../img/Es.jpg');
-            width: 150px;
-            height: 150px;
-        }
-    }
-    
 }

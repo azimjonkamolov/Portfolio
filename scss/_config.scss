@@ -9,6 +9,8 @@ $background-opacity: 0.8;
     transition: all 1s ease-out;
 }
 
+
+
 @mixin background 
 {
     @if $show-home-image
@@ -30,6 +32,19 @@ $background-opacity: 0.8;
                 background: rgba($primary-color, $background-opacity);
             }
         }
+    }
+}
+
+// Set Text Color
+@function set-text-color($color)
+{
+    @if (lightness($color) > 40 )
+    {
+        @return #000;
+    }
+    @else
+    {
+        @return #fff;
     }
 }
 
@@ -58,7 +73,7 @@ $background-opacity: 0.8;
     }
 }
 
-@mixin mediaXL
+@mixin mediaXl
 {
     @media screen and (min-width: 1171px)
     {
