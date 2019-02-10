@@ -71,31 +71,21 @@
   }
   
   // Smartphones
-  @include mediaSm {
+@include mediaSm {
     main {
       padding: 2rem;
       #home h1 {
         margin-top: 10vh;
-        font-size: 4rem;
       }
-      h1
-      {
-        text-align: 4rem;   
-      }
+  
       .lg-heading {
         margin-top:1rem;
-        font-size: 5rem;
+        font-size: 2rem;
       }
     }
-
+  
     .projects {
       grid-template-columns: 1fr;
-    }
-
-    #brwo
-    {
-        overflow-wrap: break-word;
-        word-wrap: break-word;
     }
   }
   
