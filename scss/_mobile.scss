@@ -75,13 +75,18 @@
     main {
       padding: 2rem;
       #home h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         margin-top: 10vh;
       }
   
       .lg-heading {
-        margin-top:1rem;
-        font-size: 2rem;
+        // margin-top:1rem;
+        font-size: 4rem;
+      }
+
+      .sm-heading {
+        // margin-top:1rem;
+        font-size: 1rem;
       }
     }
   
